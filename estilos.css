@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 50px;
+  background-color: aquamarine;
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(109, 104, 104);
+}
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  cursor: pointer;
+  color: brown;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  flex: 15%;
+  background-color: beige;
+  padding: 20px;
+}
+main {
+  flex: 85%;
+  background-color: rgb(226, 224, 202);
+  padding: 20px;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(230, 193, 205);
+}
+@media screen and (max-width: 700px) {
+  nav,
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* CSS del formulario */
+
+.formulario {
+  margin: 0 auto;
+  width: 450px;
+  background-color: rgb(224, 240, 179);
+  border-radius: 10px;
+}
+.formulario h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+  padding-top: 20px;
+}
+.formulario form {
+  padding: 0 40px;
+}
+.caja {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.caja input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.caja label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(150%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.boton {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #348355;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  margin: 20px 0 20px;
+}
+.boton:hover,
+.botonCerrar:hover {
+  cursor: pointer;
+  background: #02350e;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+}
+.login {
+  text-align: center;
+  text-transform: uppercase;
+}
+.botonCerrar {
+  width: 10%;
+  height: 50px;
+  border: 1px solid;
+  background: #348355;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  margin: 20px 0 20px;
+}
